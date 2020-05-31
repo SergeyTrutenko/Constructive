@@ -1,0 +1,934 @@
+<?php $pageId = 1 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Constructive</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- START HEADER -->
+    <header id="header-1">
+        <div class="container flex">
+            <a href="/" class="logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <button type="button" class="js-btn-search">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.5005 11H11.7105L11.4305 10.73C12.4105 9.59 13.0005 8.11 13.0005 6.5C13.0005 2.91 10.0905 0 6.50049 0C2.91049 0 0.000488281 2.91 0.000488281 6.5C0.000488281 10.09 2.91049 13 6.50049 13C8.11049 13 9.59049 12.41 10.7305 11.43L11.0005 11.71V12.5L16.0005 17.49L17.4905 16L12.5005 11ZM6.50049 11C4.01049 11 2.00049 8.99 2.00049 6.5C2.00049 4.01 4.01049 2 6.50049 2C8.99049 2 11.0005 4.01 11.0005 6.5C11.0005 8.99 8.99049 11 6.50049 11Z"
+                          fill="white"/>
+                </svg>
+            </button>
+            <a href="#" class="cart">
+                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.2105 7.00002L11.8305 0.44002C11.6405 0.16002 11.3205 0.0200195 11.0005 0.0200195C10.6805 0.0200195 10.3605 0.16002 10.1705 0.45002L5.79049 7.00002H1.00049C0.450488 7.00002 0.000488281 7.45002 0.000488281 8.00002C0.000488281 8.09002 0.0104882 8.18002 0.0404882 8.27002L2.58049 17.54C2.81049 18.38 3.58049 19 4.50049 19H17.5005C18.4205 19 19.1905 18.38 19.4305 17.54L21.9705 8.27002L22.0005 8.00002C22.0005 7.45002 21.5505 7.00002 21.0005 7.00002H16.2105ZM8.00049 7.00002L11.0005 2.60002L14.0005 7.00002H8.00049ZM11.0005 15C9.90049 15 9.00049 14.1 9.00049 13C9.00049 11.9 9.90049 11 11.0005 11C12.1005 11 13.0005 11.9 13.0005 13C13.0005 14.1 12.1005 15 11.0005 15Z"
+                          fill="white"/>
+                </svg>
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-wrap">
+                <div class="container flex">
+                    <span class="hover-text"></span>
+                    <ul class="menu">
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <div class="menu-wrap__footer flex">
+                        <p class="white">закупки строительных материалов<br/> “без головной боли”</p>
+                        <ul class="social">
+                            <li>
+                                <a href="#">
+                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="26" cy="26" r="25.5" stroke="url(#paint0_linear)"></circle>
+                                        <path d="M33.3666 22.0004H28.6666V19.3337C28.6666 17.9577 28.7786 17.0911 30.7506 17.0911H33.2413V12.8511C32.0293 12.7257 30.8106 12.6644 29.5906 12.6671C25.9733 12.6671 23.3333 14.8764 23.3333 18.9324V22.0004H19.3333V27.3337L23.3333 27.3324V39.3337H28.6666V27.3297L32.7546 27.3284L33.3666 22.0004Z"
+                                              fill="url(#paint1_linear)"></path>
+                                        <defs>
+                                            <linearGradient id="paint0_linear" x1="3.8743e-07" y1="26" x2="53.5943" y2="26" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#4FB8A3"></stop>
+                                                <stop offset="0.515625" stop-color="#49D29D"></stop>
+                                                <stop offset="1" stop-color="#5BD276"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear" x1="19.3333" y1="26.0004" x2="33.7969" y2="26.0004" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#4FB8A3"></stop>
+                                                <stop offset="0.515625" stop-color="#49D29D"></stop>
+                                                <stop offset="1" stop-color="#5BD276"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="26" cy="26" r="25.5" stroke="url(#paint0_linear)"></circle>
+                                        <path d="M38.7761 18.2477C38.4694 17.101 37.5654 16.197 36.4187 15.8903C34.3387 15.333 26.0001 15.333 26.0001 15.333C26.0001 15.333 17.6614 15.333 15.5814 15.8903C14.4347 16.197 13.5307 17.101 13.2241 18.2477C12.6667 20.3277 12.6667 25.9997 12.6667 25.9997C12.6667 25.9997 12.6667 31.6717 13.2241 33.7517C13.5307 34.8983 14.4347 35.8023 15.5814 36.109C17.6614 36.6663 26.0001 36.6663 26.0001 36.6663C26.0001 36.6663 34.3387 36.6663 36.4187 36.109C37.5667 35.8023 38.4694 34.8983 38.7761 33.7517C39.3334 31.6717 39.3334 25.9997 39.3334 25.9997C39.3334 25.9997 39.3334 20.3277 38.7761 18.2477ZM23.3334 30.6183V21.381L31.3334 25.9997L23.3334 30.6183Z"
+                                              fill="url(#paint1_linear)"></path>
+                                        <defs>
+                                            <linearGradient id="paint0_linear" x1="3.8743e-07" y1="26" x2="53.5943" y2="26" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#4FB8A3"></stop>
+                                                <stop offset="0.515625" stop-color="#49D29D"></stop>
+                                                <stop offset="1" stop-color="#5BD276"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear" x1="12.6667" y1="25.9997" x2="40.151" y2="25.9997" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#4FB8A3"></stop>
+                                                <stop offset="0.515625" stop-color="#49D29D"></stop>
+                                                <stop offset="1" stop-color="#5BD276"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="26" cy="26" r="25.5" stroke="url(#paint0_linear)"></circle>
+                                        <path d="M20.6667 14C16.9853 14 14 16.9853 14 20.6667V31.3333C14 35.0147 16.9853 38 20.6667 38H31.3333C35.0147 38 38 35.0147 38 31.3333V20.6667C38 16.9853 35.0147 14 31.3333 14H20.6667ZM34 16.6667C34.736 16.6667 35.3333 17.264 35.3333 18C35.3333 18.736 34.736 19.3333 34 19.3333C33.264 19.3333 32.6667 18.736 32.6667 18C32.6667 17.264 33.264 16.6667 34 16.6667ZM26 19.3333C29.6813 19.3333 32.6667 22.3187 32.6667 26C32.6667 29.6813 29.6813 32.6667 26 32.6667C22.3187 32.6667 19.3333 29.6813 19.3333 26C19.3333 22.3187 22.3187 19.3333 26 19.3333ZM26 22C24.9391 22 23.9217 22.4214 23.1716 23.1716C22.4214 23.9217 22 24.9391 22 26C22 27.0609 22.4214 28.0783 23.1716 28.8284C23.9217 29.5786 24.9391 30 26 30C27.0609 30 28.0783 29.5786 28.8284 28.8284C29.5786 28.0783 30 27.0609 30 26C30 24.9391 29.5786 23.9217 28.8284 23.1716C28.0783 22.4214 27.0609 22 26 22Z"
+                                              fill="url(#paint1_linear)"></path>
+                                        <defs>
+                                            <linearGradient id="paint0_linear" x1="3.8743e-07" y1="26" x2="53.5943" y2="26" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#4FB8A3"></stop>
+                                                <stop offset="0.515625" stop-color="#49D29D"></stop>
+                                                <stop offset="1" stop-color="#5BD276"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="paint1_linear" x1="14" y1="26" x2="38.7358" y2="26" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#4FB8A3"></stop>
+                                                <stop offset="0.515625" stop-color="#49D29D"></stop>
+                                                <stop offset="1" stop-color="#5BD276"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- END HEADER -->
+
+<!-- START CONTENT -->
+<main class="content">
+    <section class="main-screen flex">
+        <img src="img/main-screen-img.png" alt="">
+        <div class="container">
+            <div class="main-screen__info">
+                <h1 class="large white">Конструктив</h1>
+                <p class="subtitle white">
+                    закупки строительных материалов “без головной боли”
+                </p>
+                <div class="btn-wrap flex">
+                    <a href="#" class="btn-green">
+                        перейти в каталог
+                    </a>
+                    <a href="#" class="btn-bordered">
+                        <span>смотреть видео о<br/> нашей работе</span>
+                        <i>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="16" cy="16" r="16" fill="#4AE48E"/>
+                                <path d="M26 16L11 24.6603L11 7.33975L26 16Z" fill="white"/>
+                            </svg>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main-screen__whom flex">
+            <a href="#" class="flex">
+                <span>Бизнес-клиентам</span>
+            </a>
+            <a href="#" class="flex">
+                <span>Частным лицам</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="section-steps">
+        <div class="container">
+            <small class="subtitle white">ЗАГОЛОВОК</small>
+            <h2 class="white">Базовые сценарии поведения пользователей неоднозначны </h2>
+            <ul class="nav nav-tabs flex">
+                <li class="nav-item active">
+                    <a class="nav-link" data-toggle="tab" href="#tab1" aria-selected="true"><i></i><span>Подбор материалов</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab2" aria-selected="false"><i></i><span>Составление сметы</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab3" aria-selected="false"><i></i><span>Оплата</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab4" aria-selected="false"><i></i><span>Доставка и разгрузка</span></a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade active in" id="tab1">
+                    <div class="inner-pane flex">
+                        <div class="info">
+                            <span class="num">01</span>
+                            <h3>Вы озвучиваете задачу,<br/> а мы готовим решение</h3>
+                            <p>
+                                В каталоге магазина представлено более 9000 товаров. Мы составим список нужных материалов для запланированных вами работ, проконсультируем по каждому подобранному
+                                товару и укомплектуем заказ на 100%.
+                            </p>
+                        </div>
+                        <div class="img">
+                            <img src="img/tab-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab2">
+                    <div class="inner-pane flex">
+                        <div class="info">
+                            <span class="num">02</span>
+                            <h3>Мы знаем техническую документацию товара</h3>
+                            <p>
+                                Мы просчитаем расход материалов на ваш объект, составим смету и выставим счет. И все это в течение 30 минут.
+                            </p>
+                        </div>
+                        <div class="img">
+                            <img src="img/tab-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab3">
+                    <div class="inner-pane flex">
+                        <div class="info">
+                            <span class="num">03</span>
+                            <h3>Оплачиваете заказ удобным для вас способом</h3>
+                            <p>
+                                Мы предлагаем гибкие условия оплаты в удобной для вас форме. Гарантируем оперативное выставление счетов и полный пакет необходимых документов.
+                            </p>
+                        </div>
+                        <div class="img">
+                            <img src="img/tab-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab4">
+                    <div class="inner-pane flex">
+                        <div class="info">
+                            <span class="num">04</span>
+                            <h3>Доставка за 4 часа по Киеву и области с удобной разгрузкой</h3>
+                            <p>
+                                Мы доставим ваш заказ в течение 4 часов или же можете самостоятельно забрать его со складов в Киеве.
+                                При необходимости предоставим услуги грузчиков и обеспечим механическими погрузчиками.
+                            </p>
+                        </div>
+                        <div class="img">
+                            <img src="img/tab-4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-collapse">
+    <img src="img/collapse-img1.png" alt="" class="img-small">
+    <img src="img/collapse-img2.png" alt="" class="img-large">
+    <div class="container">
+        <h2>Каталог</h2>
+        <div class="flex-2 accordion">
+            <div class="item">
+                <div class="list">
+                    <button type="button">
+                        гипсокартонные системы 
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        <a href="#">Гипсокартон</a>
+                        <a href="#">профиль для гипсокартона</a>
+                        <a href="#">крепления для профиля</a>
+                        <a href="#">фиброцементная плита</a>
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        Сухие строительные смеси
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        <a href="#">Гипсокартон</a>
+                        <a href="#">профиль для гипсокартона</a>
+                        <a href="#">крепления для профиля</a>
+                        <a href="#">фиброцементная плита</a>
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        клеевые смеси
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        <a href="#">Гипсокартон</a>
+                        <a href="#">профиль для гипсокартона</a>
+                        <a href="#">крепления для профиля</a>
+                        <a href="#">фиброцементная плита</a>
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        утеплитель и звукоизоляция
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        <a href="#">Гипсокартон</a>
+                        <a href="#">профиль для гипсокартона</a>
+                        <a href="#">крепления для профиля</a>
+                        <a href="#">фиброцементная плита</a>
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        фасадные штукатурки
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+
+                <div class="list">
+                    <button type="button">
+                       лакокрасочные материалы
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        рубероид, мастики
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        подвестные потолки
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        напольное покрытие
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        ОСБ, двп, фанера
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        пены, герматики, клеи
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        Сетки, стеклосетки
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="list">
+                    <button type="button">
+                        пленки изоляционные
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        <a href="#">Гипсокартон</a>
+                        <a href="#">профиль для гипсокартона</a>
+                        <a href="#">крепления для профиля</a>
+                        <a href="#">фиброцементная плита</a>
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        стеклохолст
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        <a href="#">Гипсокартон</a>
+                        <a href="#">профиль для гипсокартона</a>
+                        <a href="#">крепления для профиля</a>
+                        <a href="#">фиброцементная плита</a>
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        цемент, песок, мел, известь
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        <a href="#">Гипсокартон</a>
+                        <a href="#">профиль для гипсокартона</a>
+                        <a href="#">крепления для профиля</a>
+                        <a href="#">фиброцементная плита</a>
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        кровельные материалы
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        <a href="#">Гипсокартон</a>
+                        <a href="#">профиль для гипсокартона</a>
+                        <a href="#">крепления для профиля</a>
+                        <a href="#">фиброцементная плита</a>
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        уголки, маяки
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+
+                <div class="list">
+                    <button type="button">
+                       крепеж
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        отопление
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        газоблоки
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        стремянки
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+                <div class="list">
+                    <button type="button">
+                        бетономешатели
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.8" d="M1.40625 0.828125L6 5.42188L10.5938 0.828125L12 2.23438L6 8.23438L0 2.23438L1.40625 0.828125Z" fill="#282828"/>
+                        </svg>
+                    </button>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="about-material">
+    <small class="subtitle">Строительные материалы в Киеве</small>
+    <h2>
+        Хотите сделать небольшой косметический<br/> ремонт в квартире?<br/>
+        Собираетесь построить загородный коттедж?<br/> 
+        Или решили утеплить дачный дом?
+    </h2>
+    <div>
+        <img src="img/material-bg.png" alt="">
+        <div class="container">
+            <div class="about-material__info">
+                <h3>Какие бы работы не планировали – вам понадобятся строительные материалы.</h3>
+                <p>
+                    Причем качественные и надежные. Можно, конечно, заказать дешевые строительные материалы, но рассчитывать на их большой срок службы не приходится. В этом случае экономить крайне нежелательно, ведь, как известно, скупой платит дважды.<br/> 
+                    <br/> 
+                    Любые строительно-ремонтные работы должны выполняться так, чтобы результат сохранялся десятилетиями. Для этого нужно учесть два момента. Первый – купить качественные строительные материалы от ведущих производителей.<br/> 
+                    <br/> 
+                    И второй – нанять бригаду опытных мастеров. Выбор подрядчика лежит на вас, а с первым моментом может помочь наш интернет магазин строительных материалов.
+                </p>
+                <div class="btn-wrap flex">
+                    <a href="#" class="btn-bordered js-read-more">
+                        <span>читать подробнее</span>
+                        <i>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="16" cy="16" r="16" fill="#4AE48E"/>
+                                <path d="M11.4062 12L16 16.3418L20.5938 12L22 13.3291L16 19L10 13.3291L11.4062 12Z" fill="white"/>
+                            </svg>
+                        </i>
+                    </a>
+                </div>
+            </div>
+            <div class="about-material__info js_hidden_block">
+                <h3>Konstruktiv – лучший интернет магазин строительных материалов в Украине</h3>
+                <p>
+                    Приобрести строительные материалы в Украине не трудно. Ведь и в Киеве, и в других городах имеются сотни предложений от различных компаний. Но если хотите купить строительные материалы в Киеве в одном месте, причем с адресной доставкой – тогда можете заказать их 
+                    в «Конструктиве». Это избавит вас от утомительных походов по местным гипермаркетам и магазинам, а заодно поможет сэкономить немало времени.<br/>
+                    <br/> 
+                    Супермаркет строительных материалов «Конструктив» – один из лидеров в своей нише. В первую очередь потому, что у нас предлагается широкий ассортимент, насчитывающий более 3000 товарных позиций.<br/> 
+                    <br/> 
+                    Разумеется, вся представленная в каталоге продукция является качественной. Поэтому, покупая у нас строительные материалы в Киеве, вы можете полностью быть уверены в их надежности и долговечности. Подтверждением тому служит огромное количество постоянных клиентов.
+                </p>
+            </div>
+        </div>
+        <div class="about-material__list">
+            <ul>
+                <li>Пенопласт;</li>
+                <li>Битумная мастика;</li>
+                <li>Рубероид;</li>
+                <li>Гидробарьер;</li>
+                <li>Наливной пол;</li>
+                <li>Стиродур;</li>
+                <li>Минеральная вата;</li>
+                <li>Фасадная штукатурка;</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="js_hidden_section">
+    <div class="collaborates-with">
+        <div class="container">
+            <h2 class="white">
+               Наш интернет магазин строительных материалов<br/> 
+               <b>более 5 лет</b> сотрудничает с компаниями 
+            </h2>
+            <div class="b-gradient">
+                <span class="t-gradient">
+                    «Енисейская Усадьба», Skymall, Artmall, «Промжитлобуд Котедж»
+                </span>
+            </div>
+            <p class="white">И это наилучшим образом подтверждает нашу репутацию</p>
+        </div>
+    </div>
+    <div class="five-reasons">
+        <div class="container">
+            <h2>5 причин купить строительные материалы в<br/> «Конструктиве»</h2>
+            <div class="item flex">
+                <div class="title">
+                    <p>Гарантия качества</p>
+                </div>
+                <div class="descr">
+                    <p>
+                        Мы предлагаем купить строительные материалы от ведущих производителей: Knauf, Ceresit, Lafarge, Master, Baumit и др. Разумеется, на все товары имеются сертификаты, подтверждающие их качество.
+                    </p>
+                </div>
+            </div>
+            <div class="item flex">
+                <div class="title">
+                    <p>Выгодные цены</p>
+                </div>
+                <div class="descr">
+                    <p>
+                        Мы поставляем строительные материалы в Киев напрямую от поставщиков, поэтому вы всегда сможете приобрести качественную продукцию в рамках выделенного бюджета. Также у нас регулярно действуют акции, а постоянным покупателям предлагаются хорошие скидки. В данном случае цены на строительные материалы будут еще ниже – и это хорошая возможность сэкономить.
+                    </p>
+                </div>
+            </div>
+            <div class="item flex">
+                <div class="title">
+                    <p>Оперативная доставка</p>
+                </div>
+                <div class="descr">
+                    <p>
+                        Несмотря на то, что находится наш интернет магазин строительных материалов в Киеве, оформлять покупку можно из любого уголка страны. Ведь мы предлагаем возможность приобрести строительные материалы с доставкой по всей стране.
+                    </p>
+                </div>
+            </div>
+            <div class="item flex">
+                <div class="title">
+                    <p>Профессиональная консультация</p>
+                </div>
+                <div class="descr">
+                    <p>
+                        Если не уверены, какие купить строительные материалы – проконсультируйтесь с менеджером по телефону. Он ответит на любые вопросы и посоветует, что лучше выбрать в вашем случае. 
+                        А при необходимости – оформит заказ на выбранные строительные материалы с доставкой в любой город.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-find-out">
+        <div class="container flex">
+            <div class="info">
+                <h3>Хотите узнать, сколько гипсокартонных листов вам понадобится для обшивки стен?</h3>
+                <p>
+                    Оставьте заявку и наш экспер свяжется с Вами, и рассчитает для вас точное количество.<br/> 
+                    <br/> 
+                    Это позволит вам приобрести ровно столько товара, сколько нужно, не переплачивая за лишние гипсокартонные листы.<br/> 
+                    <br/> 
+                    Аналогичным образом можно рассчитать количество и цены на строительные материалы для любых других задач: покраски стен, укладки напольного покрытия, утепления дома.
+                </p>
+            </div>
+            <div class="form">
+                <form method="POST">
+                    <label>
+                        <input type="text" placeholder="Ваше имя">
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Ваш номер телефона">
+                    </label>
+                    <button type="submit" class="btn-green">
+                        Отправить заявку
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="cheaper-wholesale">
+        <div class="container">
+            <small class="subtitle">
+                дешевые материалы оптом
+            </small>
+            <h2>
+                Также в «Конструктиве» вы можете приобрести строительные материалы в Киеве оптом.
+            </h2>
+            <div class="text-items flex-3">
+                <div class="item">
+                    <span>1</span>
+                    <p>
+                        В данном случае мы предлагаем более низкие цены на строительные материалы. 
+                        Это позволит вам неплохо сэкономить, тем самым снизив себестоимость ремонтных работ.
+                    </p>
+                </div>
+                <div class="item">
+                    <span>2</span>
+                    <p>
+                        Продажа осуществляется в режиме онлайн, и вы можете заказывать строительные материалы в Киеве, Харькове, Одессе или другом городе. 
+                        В свою очередь мы гарантируем своевременные и бесперебойные поставки продукции в любой регион Украины.
+                    </p>
+                </div>
+                <div class="item">
+                    <span>3</span>
+                    <p>
+                        Мы сотрудничаем со всеми, предлагая дешевые строительные материалы владельцам магазинов, строительным организациям и рядовым потребителям, решившим построить загородный дом. 
+                    </p>
+                </div>
+            </div>
+            <p>
+               В любом случае за вами будет прикреплен персональный менеджер, через которого можно заказывать нужные товары и обсуждать любые вопросы. Разумеется, чем чаще и больше вы покупаете – тем ниже будут цены на строительные материалы. Плюс при постоянных заказах можно рассчитывать на солидные скидки.
+            </p>
+        </div>
+    </div>
+</section>
+
+    <section class="additional-services">
+    <div class="container">
+        <div class="title flex">
+            <h3>Дополнительные услуги</h3>
+            <a href="#">
+                Перейти в раздел
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.8" d="M1.32911 0L7 6L1.32911 12L0 10.5938L4.34177 6L0 1.40625L1.32911 0Z" fill="#72A7FA"/>
+                </svg>
+            </a>
+        </div>
+        <div class="additional-services__items flex">
+            <a href="#" class="item">
+                <i>
+                    <img src="img/icons/add-service1.svg" alt="">
+                </i>
+                <h6>
+                    Доставка товара
+                </h6>
+                <span>
+                    Совершаем доставку товара заказанного на нашем сайте по Киеву и Киевской области
+                </span>
+                <i class="arrow">
+                    <img src="img/icons/arrow_forward.svg" alt="">
+                </i>
+            </a>
+            <a href="#" class="item">
+                <i>
+                    <img src="img/icons/add-service2.svg" alt="">
+                </i>
+                <h6>
+                    вывоз строй мусора
+                </h6>
+                <span>
+                    Совершаем доставку товара заказанного на нашем сайте по Киеву и Киевской области
+                </span>
+                <i class="arrow">
+                    <img src="img/icons/arrow_forward.svg" alt="">
+                </i>
+            </a>
+            <a href="#" class="item">
+                <i>
+                    <img src="img/icons/add-service3.svg" alt="">
+                </i>
+                <h6>
+                    Грузоперевозки
+                </h6>
+                <span>
+                    Совершаем доставку товара заказанного на нашем сайте по Киеву и Киевской области
+                </span>
+                <i class="arrow">
+                    <img src="img/icons/arrow_forward.svg" alt="">
+                </i>
+            </a>
+            <a href="#" class="item">
+                <i>
+                    <img src="img/icons/add-service4.svg" alt="">
+                </i>
+                <h6>
+                    кредитование
+                </h6>
+                <span>
+                    Совершаем доставку товара заказанного на нашем сайте по Киеву и Киевской области
+                </span>
+                <i class="arrow">
+                    <img src="img/icons/arrow_forward.svg" alt="">
+                </i>
+            </a>
+        </div>
+    </div>
+</section>
+</main>
+<!-- END CONTENT -->
+
+<!-- START FOOTER -->
+<footer>
+    <div class="container flex">
+        <div class="col">
+            <p class="title t-gradient">
+                топ- разделы
+            </p>
+            <ul class="menu">
+                <li><a href="#">Минеральная вата</a></li>
+                <li><a href="#">Стиродур</a></li>
+                <li><a href="#">Пенопласт</a></li>
+                <li><a href="#">Фольгированный утеплитель</a></li>
+                <li><a href="#">Рубероид</a></li>
+                <li><a href="#">Битумная мастика</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <p class="title t-gradient">
+                покупателям
+            </p>
+            <ul class="menu">
+                <li><a href="#">Политика Конфиденциальности</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Кредит</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <p class="title t-gradient">
+                покупателям
+            </p>
+            <div class="pay-card flex">
+                <img src="img/icons/pay-1.png" alt="">
+                <img src="img/icons/pay-2.png" alt="">
+                <img src="img/icons/pay-3.png" alt="">
+                <img src="img/icons/pay-4.png" alt="">
+            </div>
+            <p class="title t-gradient">
+                Следи за обновлениями!
+            </p>
+            <ul class="social">
+                <li>
+                    <a href="#">
+                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="26" cy="26" r="25.5" stroke="url(#paint0_linear)"/>
+                            <path d="M33.3666 22.0004H28.6666V19.3337C28.6666 17.9577 28.7786 17.0911 30.7506 17.0911H33.2413V12.8511C32.0293 12.7257 30.8106 12.6644 29.5906 12.6671C25.9733 12.6671 23.3333 14.8764 23.3333 18.9324V22.0004H19.3333V27.3337L23.3333 27.3324V39.3337H28.6666V27.3297L32.7546 27.3284L33.3666 22.0004Z" fill="url(#paint1_linear)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="3.8743e-07" y1="26" x2="53.5943" y2="26" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#4FB8A3"/>
+                                    <stop offset="0.515625" stop-color="#49D29D"/>
+                                    <stop offset="1" stop-color="#5BD276"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear" x1="19.3333" y1="26.0004" x2="33.7969" y2="26.0004" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#4FB8A3"/>
+                                    <stop offset="0.515625" stop-color="#49D29D"/>
+                                    <stop offset="1" stop-color="#5BD276"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="26" cy="26" r="25.5" stroke="url(#paint1_linear)"/>
+                            <path d="M38.7761 18.2477C38.4694 17.101 37.5654 16.197 36.4187 15.8903C34.3387 15.333 26.0001 15.333 26.0001 15.333C26.0001 15.333 17.6614 15.333 15.5814 15.8903C14.4347 16.197 13.5307 17.101 13.2241 18.2477C12.6667 20.3277 12.6667 25.9997 12.6667 25.9997C12.6667 25.9997 12.6667 31.6717 13.2241 33.7517C13.5307 34.8983 14.4347 35.8023 15.5814 36.109C17.6614 36.6663 26.0001 36.6663 26.0001 36.6663C26.0001 36.6663 34.3387 36.6663 36.4187 36.109C37.5667 35.8023 38.4694 34.8983 38.7761 33.7517C39.3334 31.6717 39.3334 25.9997 39.3334 25.9997C39.3334 25.9997 39.3334 20.3277 38.7761 18.2477ZM23.3334 30.6183V21.381L31.3334 25.9997L23.3334 30.6183Z" fill="url(#paint1_linear)"/>
+                            <defs>
+                                <linearGradient id="paint1_linear" x1="3.8743e-07" y1="26" x2="53.5943" y2="26" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#4FB8A3"/>
+                                    <stop offset="0.515625" stop-color="#49D29D"/>
+                                    <stop offset="1" stop-color="#5BD276"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear" x1="12.6667" y1="25.9997" x2="40.151" y2="25.9997" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#4FB8A3"/>
+                                    <stop offset="0.515625" stop-color="#49D29D"/>
+                                    <stop offset="1" stop-color="#5BD276"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="26" cy="26" r="25.5" stroke="url(#paint0_linear)"/>
+                            <path d="M20.6667 14C16.9853 14 14 16.9853 14 20.6667V31.3333C14 35.0147 16.9853 38 20.6667 38H31.3333C35.0147 38 38 35.0147 38 31.3333V20.6667C38 16.9853 35.0147 14 31.3333 14H20.6667ZM34 16.6667C34.736 16.6667 35.3333 17.264 35.3333 18C35.3333 18.736 34.736 19.3333 34 19.3333C33.264 19.3333 32.6667 18.736 32.6667 18C32.6667 17.264 33.264 16.6667 34 16.6667ZM26 19.3333C29.6813 19.3333 32.6667 22.3187 32.6667 26C32.6667 29.6813 29.6813 32.6667 26 32.6667C22.3187 32.6667 19.3333 29.6813 19.3333 26C19.3333 22.3187 22.3187 19.3333 26 19.3333ZM26 22C24.9391 22 23.9217 22.4214 23.1716 23.1716C22.4214 23.9217 22 24.9391 22 26C22 27.0609 22.4214 28.0783 23.1716 28.8284C23.9217 29.5786 24.9391 30 26 30C27.0609 30 28.0783 29.5786 28.8284 28.8284C29.5786 28.0783 30 27.0609 30 26C30 24.9391 29.5786 23.9217 28.8284 23.1716C28.0783 22.4214 27.0609 22 26 22Z" fill="url(#paint1_linear)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="3.8743e-07" y1="26" x2="53.5943" y2="26" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#4FB8A3"/>
+                                    <stop offset="0.515625" stop-color="#49D29D"/>
+                                    <stop offset="1" stop-color="#5BD276"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear" x1="14" y1="26" x2="38.7358" y2="26" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#4FB8A3"/>
+                                    <stop offset="0.515625" stop-color="#49D29D"/>
+                                    <stop offset="1" stop-color="#5BD276"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER -->
+
+
+<script src="libs/jquery/jquery-2.2.4.min.js"></script>
+<script src="libs/popper/popper.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="js/main_script.js"></script>
+
+<script>
+    $(document).ready(function() {
+      var css = 
+        '<style>\n\
+          .markup-nav { cursor: pointer; position: fixed; z-index: 5000; top: 60px; left: -176px; width: 170px; font:bold 12px/1.2 Helvetica, Arial; box-shadow: 0 0 4px rgba(0, 0, 0, .6); transition: left 200ms ease; box-sizing: border-box; }\n\
+          .markup-nav__inner { background:#fff; border-radius: 0 0 5px 0; padding: 5px 10px 5px 0; position: relative; }\n\
+          .markup-nav:before { content: ""; position: absolute; left: 100%; top: 0; width: 35px; height: 40px; border-radius: 0 5px 5px 0; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAAwFBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABiCivsAAAAP3RSTlMAAAIEEBEVFiYsLS4vMzg5Ojs8PT5BR0tUXV5gaG5vcHd4fby9v8DBwsTFycvMzc/g4+Tl5uvs7vP09fb5+v5kF+L8AAAAsklEQVR42m3QaReBQBTG8aks2VNIthARQostmvv9v5U7V5164f/qOb9zZuYUyzLi2KAhSTl5AF5B/cuhOYkAgpHqnTWiEwAH6gPgE+2h1JaozQtJVSIb59uu1lcpjjHSwH3gshi2xBG6QxYCliiCaiAKfvSUBVWIQqY54qApaIYj3mi41rhupqxYCY4pvdgD0UsA8AaRC6V2RD7k8fyDNN/tzO9436LlHLv/f06WHl31jL67eSl1BXfldgAAAABJRU5ErkJggg==) no-repeat 62% 50% white; box-shadow: 0 0 4px rgba(0, 0, 0, .6); }\n\
+          .markup-nav a { display: block; padding: 2px 10px; color: #000; /*text-shadow: 1px 1px 0 #283E68;*/text-decoration: none !important; border: none !important; }\n\
+          .markup-nav a:hover { background: #edf1f5; color: #000 !important; }\n\
+          .markup-nav.is-open { left: 0; }\n\
+        </style>';
+
+      var html =
+        '<div class="markup-nav">\n\
+          <div class="markup-nav__inner">\n\
+            <a href="index.html">Главная</a>\n\
+            <a href="calculation-delivery.html">Просчет и доставка</a>\n\
+            <a href="payment-delivery.html">Расчет и доставка</a>\n\
+            <a href="404.html">404</a>\n\
+            <a href="categories.html">Категории</a>\n\
+            <a href="categories-filtered.html">Категории (фильтр)</a>\n\
+            <a href="product-card.html">о товаре</a>\n\
+          </div>\n\
+        </div>'
+
+      $('body').prepend(css + html);
+
+      $('.markup-nav').on('click', function() {
+        $(this).toggleClass('is-open');
+      });
+
+    });
+
+</script>
+</body>
+
+
